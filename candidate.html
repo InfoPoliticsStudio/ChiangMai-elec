@@ -153,6 +153,17 @@
                 dropdownOptions.style.display = "none";
             }
         });
+      // เลือก dropdown options ทั้งหมด
+      const dropdownOptions = document.querySelector(".dropdown-options");
+      const options = document.querySelectorAll(".dropdown-options .dropdown-option");
+      
+      // เมื่อคลิก dropdown-option ใดๆ ให้ซ่อน dropdown-options
+      options.forEach(option => {
+          option.addEventListener("click", () => {
+              dropdownOptions.style.display = "none";
+          });
+      });
+
     </script>
       </div>
     </div>
