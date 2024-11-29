@@ -80,7 +80,16 @@ header {
 
 
 
-  
+
+.bg-center {
+    background-position: center;
+}
+.bg-cover {
+    background-size: cover;
+}
+.items-center {
+    align-items: center;
+}  
 @media (min-width: 768px) {
     .md\:py-32 {
         padding-top: 8rem;
