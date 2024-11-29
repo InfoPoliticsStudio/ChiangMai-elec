@@ -25,9 +25,13 @@
 .ui-gap-2 {
     gap: .5rem;
 }
-.ui-grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+@media (min-width: 768px) {
+    .md\:ui-col-span-3 {
+        grid-column: span 3 / span 3;
+    }
 }
+      
 .ui-flex-1 {
     flex: 1 1 0%;
 }
@@ -227,7 +231,7 @@ document.addEventListener("click", () => {
     <div class="ui-bg-black ui-text-white ui-flex ui-justify-center">
       <div class="ui-flex ui-flex-row ui-w-full ui-max-w-screen-xl ui-m-6 md:ui-m-8 ui-space-x-4">
         <div class="ui-flex-1 ui-flex ui-flex-col md:ui-flex-row ui-gap-6">
-          <a target="_blank" href=""><img class="ui-h-6 md:ui-h-8" src="PATTANA.png" alt="CNX PATTANA" style=" height: 32px; "></a>
+          <a target="_blank" href=""><img class="ui-h-6 md:ui-h-8" src="PATTANA.png" alt="CNX PATTANA" style=" height: 7rem; "></a>
         </div>
         <div class="ui-flex-1 ui-grid ui-grid-cols-1 md:ui-grid-cols-3 ui-gap-2">
           <span class="typo-u5 ui-font-bold md:ui-col-span-3">LINKS</span>
