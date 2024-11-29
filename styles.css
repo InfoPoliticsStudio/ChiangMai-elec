@@ -228,3 +228,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: calc(2rem* calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2rem* var(--tw-space-y-reverse));
 }
+
+@media (min-width: 768px) {
+    .md\:hidden {
+        display: none;
+    }
+}
