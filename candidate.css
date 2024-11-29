@@ -1,0 +1,255 @@
+   
+.text-center {
+    text-align: center !important;
+}
+.px-\[20px\] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.mt-12 {
+    margin-top: 3rem !important;
+}
+    
+@media (min-width: 768px) {
+    .typo-h6 {
+        font-size: 24px;
+    }
+}
+    
+.hidden {
+    display: none !important;
+}
+    
+.typo-h1 {
+    font-family: Kanit, ui-sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+    
+.max-w-\[280px\] {
+    max-width: 280px !important;
+}
+.mb-\[70px\] {
+    margin-bottom: 70px !important;
+}
+.mt-\[10px\] {
+    margin-top: 10px !important;
+}
+.typo-u3 {
+    font-family: Anuphan, ui-serif;
+    font-size: 16px;
+    line-height: 1.25;
+}
+    
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+.w-full {
+    width: 100% !important;
+}
+.grid {
+    display: grid !important;
+}
+.z-20 {
+    z-index: 20 !important;
+}
+.top-0 {
+    top: 0 !important;
+}
+.sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+}
+    
+.text-white {
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255) !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.px-\[10px\] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+.py-5 {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+}
+.bg-black, .bg-white {
+    --tw-bg-opacity: 1 !important;
+}
+.bg-black {
+    background-color: rgb(0 0 0) !important;
+}
+    
+.w-\[16px\] {
+    width: 16px !important;
+}
+.h-\[17px\] {
+    height: 17px !important;
+}
+    
+@media (min-width: 768px) {
+    .md\:ml-\[20px\] {
+        margin-left: 20px !important;
+    }
+}
+.ml-\[10px\] {
+    margin-left: 10px !important;
+}
+@media (min-width: 768px) {
+    .typo-h8 {
+        font-size: 18px;
+    }
+}
+.typo-h8 {
+    font-family: Kanit, ui-sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+    
+.bg-white {
+    background-color: rgb(255 255 255) !important;
+}
+.bg-black, .bg-white {
+    --tw-bg-opacity: 1 !important;
+}
+    
+@media (min-width: 768px) {
+    .md\:grid-cols-\[repeat\(3\2c auto\)\] {
+        grid-template-columns: repeat(3, auto) !important;
+    }
+}
+.gap-\[10px\] {
+    gap: 10px !important;
+}
+.grid {
+    display: grid !important
+;
+}
+.mt-\[46px\] {
+    margin-top: 46px !important;
+}
+.m-auto {
+    margin: auto !important;
+}
+    
+@media (min-width: 768px) {
+    .md\:w-\[30vw\] {
+        width: 30vw !important;
+    }
+}
+.max-w-\[500px\] {
+    max-width: 500px !important;
+}
+.m-auto {
+    margin: auto !important;
+}
+    
+@media (min-width: 768px) {
+    .md\:h-\[30vw\] {
+        height: 30vw !important;
+    }
+}
+.max-w-\[500px\] {
+    max-width: 500px !important;
+}
+.max-h-\[500px\] {
+    max-height: 500px !important;
+}
+.relative {
+    position: relative !important;
+}
+    
+@media (min-width: 768px) {
+    .md\:w-\[30vw\] {
+        width: 30vw !important;
+    }
+}
+@media (min-width: 768px) {
+    .md\:h-\[30vw\] {
+        height: 30vw !important;
+    }
+}
+.border-white {
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(255 255 255/ 1!important) !important;
+}
+.max-w-\[500px\] {
+    max-width: 500px !important;
+}
+.max-h-\[500px\] {
+    max-height: 500px !important;
+}
+    
+@media (min-width: 768px) {
+    .md\:mt-\[12px\] {
+        margin-top: 12px !important;
+    }
+}
+
+.mr-\[10px\] {
+    margin-right: 10px !important;
+}
+@media (min-width: 768px) {
+    .typo-h2 {
+        font-size: 48px;
+    }
+}
+.typo-h2 {
+    font-family: Kanit, ui-sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.justify-center {
+    justify-content: center !important;
+}
+.flex-col {
+    flex-direction: column !important;
+}
+    
+@media (min-width: 768px) {
+    .typo-h8 {
+        font-size: 18px;
+    }
+}
+.typo-h8 {
+    font-family: Kanit, ui-sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+    
+.text-\[\#ffffff80\] {
+    color: #ffffff80 !important;
+}
+@media (min-width: 768px) {
+    .typo-b5 {
+        font-size: 16px;
+    }
+}
+.typo-b5 {
+    font-family: Anuphan, ui-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.mt-\[46px\] {
+    margin-top: 46px !important;
+}
+.m-auto {
+    margin: auto !important;
+}
+.pt-\[20px\] {
+    padding-top: 20px !important;
+}
+.pb-\[126px\] {
+    padding-bottom: 126px !important;
+}
