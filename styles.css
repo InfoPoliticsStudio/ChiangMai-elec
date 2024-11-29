@@ -55,11 +55,15 @@ header {
     top: 60px;
     right: 20px;
     width: 200px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .menu.show {
-    display: flex;
+        display: block;
+        width: 100%;
+        top: 47.2px;
+        right: 0;
+        padding: .5rem;
+        z-index: 50;
   }
 
   .menu li {
