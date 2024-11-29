@@ -70,6 +70,9 @@ header {
     text-align: right;
   }
 
+.ui-font-bold {
+    font-weight: 700;
+}
   .menu-icon {
     display: block;
   }
