@@ -265,3 +265,20 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
 }
+
+.to-black {
+    --tw-gradient-to: black;
+}
+.from-transparent {
+    --tw-gradient-from: transparent;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
+}
+.bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+.h-12 {
+    height: 3rem;
+}
+.-mt-12 {
+    margin-top: -3rem;
+}
