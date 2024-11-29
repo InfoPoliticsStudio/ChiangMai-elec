@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <style>
- 
-  </style>
+    <style>
+
+    </style>
 </head>
 <body>
   <header>
@@ -97,10 +97,63 @@
           <span class="hidden">เช็กหมายเลข (เบอร์) </span> 
           ผู้สมัครสมาชิกสภา อบจ. (ส.อบจ.) (0)
         </h2>
-        <p class="typo-b5 mb-[20px] md:mb-[40px]">เลือกอำเภอ</p>
-        <div class="grid grid-cols-1 gap-[10px]">
-          <button class="typo-b5 font-[600] mx-auto w-full max-w-[280px] md:max-w-[400px] py-[16px] px-[20px] border border-[#dadada]">จอมทอง</button>
+        <div class="input-container">
+        <label for="district">อำเภอ</label>
+        <div class="dropdown" id="dropdown">
+            <span class="dropdown-text" id="dropdown-text">เมืองเชียงใหม่</span>
+            <span class="dropdown-arrow">▼</span>
+            <div class="dropdown-options" id="dropdown-options">
+                <div class="dropdown-option" data-district="กัลยาณิวัฒนา" data-zone="1 เขต">กัลยาณิวัฒนา</div>
+                <div class="dropdown-option" data-district="จอมทอง" data-zone="2 เขต">จอมทอง</div>
+                <div class="dropdown-option" data-district="ไชยปราการ" data-zone="1 เขต">ไชยปราการ</div>
+                <div class="dropdown-option" data-district="เชียงดาว" data-zone="2 เขต">เชียงดาว</div>
+                <div class="dropdown-option" data-district="ดอยสะเก็ด" data-zone="2 เขต">ดอยสะเก็ด</div>
+                <div class="dropdown-option" data-district="ดอยหล่อ" data-zone="1 เขต">ดอยหล่อ</div>
+                <div class="dropdown-option" data-district="ดอยเต่า" data-zone="1 เขต">ดอยเต่า</div>
+                <div class="dropdown-option" data-district="ฝาง" data-zone="2 เขต">ฝาง</div>
+                <div class="dropdown-option" data-district="พร้าว" data-zone="1 เขต">พร้าว</div><div class="dropdown-option" data-district="เมืองเชียงใหม่" data-zone="5 เขต">เมืองเชียงใหม่</div>
+                <div class="dropdown-option" data-district="หางดง" data-zone="2 เขต">หางดง</div>
+                <div class="dropdown-option" data-district="สารภี" data-zone="2 เขต">สารภี</div>
+            </div>
         </div>
+        <span class="dropdown-value" id="dropdown-value">5 เขต</span>
+    </div>
+
+    <script>
+        const dropdown = document.getElementById("dropdown");
+        const dropdownText = document.getElementById("dropdown-text");
+        const dropdownOptions = document.getElementById("dropdown-options");
+        const dropdownValue = document.getElementById("dropdown-value");
+        const options = document.querySelectorAll(".dropdown-option");
+
+        // แสดง/ซ่อน dropdown options เมื่อคลิก
+        dropdown.addEventListener("click", () => {
+            dropdownOptions.style.display =
+                dropdownOptions.style.display === "block" ? "none" : "block";
+        });
+
+        // เมื่อเลือกตัวเลือกใน dropdown
+        options.forEach(option => {
+            option.addEventListener("click", (e) => {
+                const district = e.target.getAttribute("data-district");
+                const zone = e.target.getAttribute("data-zone");
+
+                // อัปเดตข้อความ dropdown และจำนวนเขต
+                dropdownText.textContent = district;
+                dropdownValue.textContent = zone;
+
+                // ซ่อน dropdown options
+                dropdownOptions.style.display = "none";
+            });
+        });
+
+        // ซ่อน dropdown options เมื่อคลิกภายนอก
+        document.addEventListener("click", (e) => {
+            if (!dropdown.contains(e.target)) {
+                dropdownOptions.style.display = "none";
+            }
+        });
+    </script>
       </div>
     </div>
     
