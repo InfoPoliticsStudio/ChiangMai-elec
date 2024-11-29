@@ -77,3 +77,13 @@ header {
     display: block;
   }
 }
+
+.items-center {
+    align-items: center;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+}
