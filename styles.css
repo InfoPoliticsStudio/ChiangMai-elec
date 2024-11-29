@@ -70,6 +70,28 @@ header {
     text-align: right;
   }
 
+
+
+
+
+
+
+
+
+
+
+  
+@media (min-width: 768px) {
+    .md\:py-32 {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+@media (min-width: 768px) {
+    .md\:flex-row {
+        flex-direction: row;
+    }
+}
 .ui-font-bold {
     font-weight: 700;
 }
